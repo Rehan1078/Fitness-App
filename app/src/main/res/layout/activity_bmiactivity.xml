@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/splash"
+    tools:context=".BMIActivity">
+
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BMI Calculator"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="true"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_marginVertical="25dp"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:layout_below="@+id/textview1"
+        android:id="@+id/textview2"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="50dp"
+        android:layout_height="wrap_content"
+        android:text="Your Weight in Kg"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_below="@+id/textview2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginVertical="10dp"
+        android:paddingHorizontal="15dp"
+        android:textColor="@color/black"
+        android:paddingVertical="12dp"
+        android:inputType="numberDecimal"
+        android:background="@drawable/textview_bg" />
+
+    <TextView
+        android:layout_below="@+id/weight"
+        android:id="@+id/textview3"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="50dp"
+        android:layout_height="wrap_content"
+        android:text="Your Height in Cm"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/height"
+        android:layout_below="@+id/textview3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginVertical="10dp"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="12dp"
+        android:textColor="@color/black"
+        android:inputType="numberDecimal"
+        android:background="@drawable/textview_bg" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_below="@+id/height"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:text="Calculate"
+        android:background="@drawable/button_bg"
+        android:textColor="#fafafa" />
+
+    <TextView
+        android:layout_below="@+id/btn"
+        android:layout_marginTop="50dp"
+        android:id="@+id/textview4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginHorizontal="50dp"
+        android:text=""
+        android:textAllCaps="true"
+        android:textSize="26sp"
+        android:layout_marginVertical="15dp"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:layout_below="@+id/textview4"
+        android:id="@+id/result"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="60sp"
+        android:textColor="@color/white"
+        android:text="" />
+
+
+    <TextView
+        android:layout_below="@+id/result"
+        android:id="@+id/resultgoodorbad"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="55sp"
+        android:textColor="@color/white"
+        android:text="" />
+
+</RelativeLayout>
